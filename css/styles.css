@@ -28,6 +28,11 @@ body {
 /*============WebStudio============*/
 
 /*NAV webstudio and portfolio */
+.navigation,
+.navigation-list,
+.navigation-list-header {
+  display: flex;
+}
 
 /*LOGO*/
 .logo-link,
@@ -137,6 +142,10 @@ body {
 }
 
 /*=======Advantage container=======*/
+.advantage-lists {
+  display: flex;
+}
+
 .advantage-list-item {
   font-weight: bold;
   font-size: 14px;
@@ -157,6 +166,10 @@ body {
 }
 
 /*=======WORK instrument=======*/
+.work-instrument-list {
+  display: flex;
+}
+
 .work-instrument-img {
   width: 370px;
   height: 294px;
@@ -186,6 +199,10 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+}
+
+.work-team-lists {
+  display: flex;
 }
 
 .work-team-card {
