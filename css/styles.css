@@ -1,23 +1,254 @@
+/* title text #212121; */
+/* цвет основного текста #757575; */
+/* цвет адреса #FFFFFF; */
+/* цвет ссылок у футере rgba(255, 255, 255, 0.6); */
+/* акцент #2196F3; */
+/* background основной: #E5E5E5; */
+/* background команды: #F5F4FA; */
+/* background футер и герой: #2F303A; */
+
+/*:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary-white-color: #ffffff;
+  --footer-heroy-background-color: #2f303a;
+  --background-komandy: #f5f4fa;
+  --color-link-footer: rgba(255, 255, 255, 0.6);
+}
+*/
+
 body {
   font-family: Roboto, sans-serif;
+  color: #757575;
   font-size: 14px;
   font-style: normal;
 }
 
-/*==============webstudio=================*/
+/*============WebStudio============*/
 
-/*nav webstudio and portfolio */
+/*NAV webstudio and portfolio */
 
-/*hedder webstudio*/
+/*LOGO*/
+.logo-link,
+.logo-link-secondary,
+.logo-secondary-footer {
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  color: #2196f3;
+}
 
-/*main webstudio*/
+.logo {
+  font-family: Raleway;
+  font-style: 700;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  color: #2196f3;
+}
+
+.logo-link-secondary {
+  color: #212121;
+}
+
+.logo-secondary-footer {
+  color: #ffffff;
+}
+
+/*===========NAVigation list===========*/
+
+.navigation-list-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+.current-link {
+  color: #2196f3;
+}
+
+.navigation-list-link:hover,
+.navigation-list-link:focus {
+  color: #2196f3;
+}
+
+.contact-link-tel,
+.contact-link-mail {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.contact-link-tel:hover,
+.contact-link-tel:focus,
+.contact-link-mail:hover,
+.contact-link-mail:focus {
+  color: #2196f3;
+}
+
+/*=======MAIN webstudio=======*/
+
+/*===Service===*/
+.service {
+  background: #2f303a;
+}
+
+.service-idea {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1, 364;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.service-btn {
+  width: 200px;
+  height: 50px;
+  left: 700px;
+  top: 430px;
+
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1, 875;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  background: #2196f3;
+  color: #ffffff;
+}
+
+.service-btn:hover,
+.service-btn:focus {
+  background: #ffffff;
+  color: #2196f3;
+}
+
+/*=======Advantage container=======*/
+.advantage-list-item {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1, 143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
+}
+
+.advantage-lists {
+}
+
+.advantage-list-content {
+  width: 270px;
+  height: 75px;
+  left: 815px;
+  top: 800px;
+}
+
+/*=======WORK instrument=======*/
+.work-instrument-img {
+  width: 370px;
+  height: 294px;
+  left: 615px;
+  top: 1061px;
+}
+
+.work-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1, 167;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+/*===About Work team===*/
+
+.about-work-team {
+  background: #f5f4fa;
+}
+
+.our-work-team {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1, 167;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.work-team-card {
+  position: unset;
+  width: 270px;
+  height: 368px;
+  left: 815px;
+  top: 1635px;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+  background: #ffffff;
+}
+
+.work-team-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1, 188;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.work-team-profession {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.188;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
 
 /*footer webstudio and portfolio*/
 
+.footer {
+  background: #2f303a;
+}
+
+.contact-link-tel-footer,
+.contact-link-mail-footer {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1, 714;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.contact-link-tel-footer:hover,
+.contact-link-tel-footer:focus,
+.contact-link-mail-footer:hover,
+.contact-link-mail-footer:focus {
+  color: #2196f3;
+}
+
+.text-address {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1, 714;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
 /*=============portfolio===================*/
 
-/*hedder portfolio*/
-
 /*main portfolio*/
-
-/*footer portfolio*/

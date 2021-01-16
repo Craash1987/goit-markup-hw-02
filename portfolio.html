@@ -4,6 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <style>
+        li {
+            list-style-type: none;
+        }
+    
+        /*ul {
+            margin-left: 0;
+            padding-left: 0;
+        }*/
+    
+        a {
+            text-decoration: none;
+        }
+    </style>
      <link
          rel="stylesheet"
          href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
@@ -22,24 +36,32 @@
          href="./css/styles.css" />
 </head>
 <body>
-     <header>
-         <nav>
-             <!--Text Webstudio-->
-             <a href="./index.html" target="_blank" lang="en">
-                <Span>Web</Span>studio</a> 
-             <!--Menu NAV-->
-             <ul>
-                <li> <a href="./index.html">Студия</a> </li>
-                <li> <a href="#">Портфолио</a> </li>
-                <li> <a href="#">Контакты</a> </li>
-             </ul>
-         </nav>
-             <!--Contacts menu-->
-             <ul>
-                <li> <a href="tel:+380961111111">+38 096 111 11 11</a> </li>
-                <li> <a href="mailto:info@devstudio.com">info@devstudio.com</a> </li>
-             </ul>
-     </header>
+    <header class="header">
+        <nav class="navigation">
+    
+            <!--Text Portfolio-->
+            <a class="logo-link" href="./index.html" lang="en">
+                Web<Span class="logo-link-secondary">Studio</Span></a>
+    
+            <!--Menu NAV-->
+            <ul class="navigation-list">
+                <li class="navigation-list-item">
+                    <a class="navigation-list-link" href="./index.html">Студия</a>
+                </li>
+                <li class="navigation-list-item">
+                    <a class="navigation-list-link current-link" href="./portfolio.html">Портфолио</a>
+                </li>
+                <li class="navigation-list-item">
+                    <a class="navigation-list-link" href="#">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+        <!--Contacts menu-->
+        <ul class="navigation-list">
+            <li> <a class="contact-link-tel" href="tel:+380961111111">+38 096 111 11 11</a> </li>
+            <li> <a class="contact-link-mail" href="mailto:info@devstudio.com">info@devstudio.com</a> </li>
+        </ul>
+    </header>
 
      <main>
          <section>
@@ -121,19 +143,20 @@
         </section>
      </main>
  
-     <footer>
+    <footer class="footer">
          <!--Adress-->
-         <a href="./index.html" target="_blank" lang="en">
-            <span>Web</span>studio</a>
-           <address>г. Киев, пр-т Леси Украинки, 26</address>
-            <ul>
-                <li>
-                    <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-                </li>
-                <li>
-                    <a href="tel:+380961111111">+38 096 111 11 11</a>
-                </li>
-            </ul>
+             <a class="logo link" href="./index.html" lang="en">
+                Web<span class="logo-secondary-footer">Studio</span></a>
+
+                <address class="text-address">г. Киев, пр-т Леси Украинки, 26</address>
+                <ul>
+                    <li>
+                        <a class="contact-link-tel-footer" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                    <li>
+                        <a class="contact-link-mail-footer" href="tel:+380961111111">+38 096 111 11 11</a>
+                    </li>
+                </ul>
      </footer>
 
 </body>
