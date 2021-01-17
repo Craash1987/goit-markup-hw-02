@@ -238,10 +238,7 @@ body {
 }
 /*=============portfolio===================*/
 .title-page {
-  position: relative;
-  width: 1600px;
-  height: 1880px;
-  background: #FFFFFF;
+    color: #FFFFFF;
 }
 
 /*=======potfolio-toolbar=======*/
