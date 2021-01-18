@@ -77,14 +77,6 @@ body {
 
 /*===========NAVigation list===========*/
 
-.navigation-list-link {
-  color: var(--title-text-color);
-}
-
-.current-link {
-  color: var(--accent-color)
-}
-
 .navigation-list-link:hover,
 .navigation-list-link:focus {
   color: var(--accent-color)
@@ -98,6 +90,14 @@ body {
   line-height: 1.143;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+}
+
+.navigation-list-link {
+  color: var(--title-text-color);
+}
+
+.current-link {
+  color: var(--accent-color)
 }
 
 .contact-link-tel:hover,
