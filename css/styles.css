@@ -1,26 +1,26 @@
-  
-/* title text #212121; */
 /* цвет основного текста #757575; */
-/* цвет адреса #FFFFFF; */
-/* цвет ссылок у футере rgba(255, 255, 255, 0.6); */
+/* title text #212121; */
 /* акцент #2196F3; */
+/* цвет адреса #FFFFFF; */
 /* background основной: #E5E5E5; */
-/* background команды: #F5F4FA; */
-/* background футер и герой: #2F303A; */
+/* background work team and toolbar btn: #F5F4FA; */
+/* background футер и сервис: #2F303A; */
+/* цвет ссылок у футере rgba(255, 255, 255, 0.6); */
 
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --primary-white-color: #ffffff;
-  --footer-heroy-background-color: #2f303a;
-  --background-komandy: #f5f4fa;
+  --main-background-color: #E5E5E5;
+  --background-work-team: #f5f4fa;
+  --footer-service-background-color: #2f303a;
   --color-link-footer: rgba(255, 255, 255, 0.6);
 }
 
 body {
   font-family: Roboto, sans-serif;
-  color: #757575;
+  color: var(--primary-text-color);
   font-size: 14px;
   font-style: normal;
 }
@@ -55,7 +55,7 @@ body {
   font-weight: bold;
   font-size: 26px;
   line-height: 1.2;
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .logo {
@@ -64,15 +64,15 @@ body {
   font-weight: bold;
   font-size: 26px;
   line-height: 31px;
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .logo-link-secondary {
-  color: #212121;
+  color: var(--title-text-color);
 }
 
 .logo-secondary-footer {
-  color: #ffffff;
+  color: var(--primary-white-color);
 }
 
 /*===========NAVigation list===========*/
@@ -82,16 +82,16 @@ body {
   font-size: 14px;
   line-height: 1.143;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--title-text-color);
 }
 
 .current-link {
-  color: #2196f3;
+  color: var(--accent-color)
 }
 
 .navigation-list-link:hover,
 .navigation-list-link:focus {
-  color: #2196f3;
+  color: var(--accent-color)
 }
 
 .contact-link-tel,
@@ -100,31 +100,31 @@ body {
   font-size: 14px;
   line-height: 1.143;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--primary-text-color);
 }
 
 .contact-link-tel:hover,
 .contact-link-tel:focus,
 .contact-link-mail:hover,
 .contact-link-mail:focus {
-  color: #2196f3;
+  color: var(--accent-color)
 }
 
 /*=======MAIN webstudio=======*/
 
 /*===Service===*/
 .service {
-  background: #2f303a;
+  background: var(--footer-service-background-color);
 }
 
 .service-idea {
   font-weight: 900;
   font-size: 44px;
-  line-height: 1, 364;
+  line-height: 1.364;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--primary-white-color);
 }
 
 .service-btn {
@@ -133,25 +133,28 @@ body {
   left: 700px;
   top: 430px;
 
-  background: #2196f3;
+  background: var(--accent-color);
+
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 
   font-weight: bold;
   font-size: 16px;
-  line-height: 1, 875;
+  line-height: 1.875;
   display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  background: #2196f3;
-  color: #ffffff;
+  background: var(--accent-color);
+  color: var(--primary-white-color);
+  margin-top: 0%;
+  margin-bottom: 30px;
 }
 
 .service-btn:hover,
 .service-btn:focus {
-  background: #ffffff;
-  color: #2196f3;
+  background: var(--primary-white-color);
+  color: var(--accent-color)
 }
 
 /*=======Advantage container=======*/
@@ -162,10 +165,10 @@ body {
 .advantage-list-item {
   font-weight: bold;
   font-size: 14px;
-  line-height: 1, 143;
+  line-height: 1.143;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #212121;
+  color: var(--title-text-color);
 }
 
 .advantage-list-content {
@@ -183,25 +186,25 @@ body {
 .work-title {
   font-weight: bold;
   font-size: 36px;
-  line-height: 1, 167;
+  line-height: 1.167;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--title-text-color);
 }
 
 /*===About Work team===*/
 
 .about-work-team {
-  background: #f5f4fa;
+  background: var(--background-work-team);
 }
 
 .our-work-team {
   font-weight: bold;
   font-size: 36px;
-  line-height: 1, 167;
+  line-height: 1.167;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--title-text-color);
 }
 
 .work-team-lists {
@@ -215,20 +218,21 @@ body {
   left: 815px;
   top: 1635px;
 
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+  box-shadow: 
+    0px 1px 3px rgba(0, 0, 0, 0.12), 
+    0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-
-  background: #ffffff;
+  border-radius: 0px 0px 4px 4px; 
+  background: var(--primary-white-color);
 }
 
 .work-team-title {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1, 188;
+  line-height: 1.188;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--title-text-color);
 }
 
 .work-team-profession {
@@ -237,77 +241,78 @@ body {
   line-height: 1.188;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--primary-text-color);
 }
 
 /*footer webstudio and portfolio*/
 
 .footer {
-  background: #2f303a;
+  background: var(--footer-service-background-color);
 }
 
 .contact-link-tel-footer,
 .contact-link-mail-footer {
   font-weight: normal;
   font-size: 14px;
-  line-height: 1, 714;
+  line-height: 1.714;
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--color-link-footer);
 }
 
 .contact-link-tel-footer:hover,
 .contact-link-tel-footer:focus,
 .contact-link-mail-footer:hover,
 .contact-link-mail-footer:focus {
-  color: #2196f3;
+  color: var(--accent-color)
 }
 
 .text-address {
   font-weight: normal;
   font-size: 14px;
-  line-height: 1, 714;
+  line-height: 1.714;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--primary-white-color);
 }
 /*=============portfolio===================*/
 .title-page {
-    color: #FFFFFF;
+  color: var(--primary-white-color);
 }
 
 /*=======potfolio-toolbar=======*/
 
 .main-conteiner-btns-end-links {
-  background: #e5e5e5;
+  background: var(--main-background-color);
 }
 
 /*===Main conteiner toolbar*/
 .potfolio-toolbar-lists {
   display: flex;
 }
-.potfolio-toolbar-list-item {
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+.potfolio-toolbar-btn {
+  box-shadow: 
+   0px 3px 1px rgba(0, 0, 0, 0.1), 
+   0px 1px 2px rgba(0, 0, 0, 0.08),
+   0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
-
-  background: #f5f4fa;
-}
+  background: var(--background-work-team);
+  }
 
 .potfolio-toolbar-btn:hover,
 .potfolio-toolbar-btn:focus {
-  background: #2196f3;
-  color: #ffffff;
+  background: var(--accent-color);
+  color: var(--primary-white-color);
 }
 
 .potfolio-toolbar-btn {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1, 625;
+  line-height: 1.625;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--title-text-color);
 }
 
-/*======Projtct links======*/
+/*======Project links======*/
 
 .project-lists {
   display: flex;
@@ -316,8 +321,7 @@ body {
 .project-list-item {
   width: 370px;
   height: 404px;
-
-  background: #ffffff;
+  background: var(--primary-white-color);
   border: 1px solid #eeeeee;
   box-sizing: border-box;
 }
@@ -332,13 +336,13 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: #212121;
+  color: var(--title-text-color);
 }
 
 .project-tools {
   font-weight: normal;
   font-size: 16px;
-  line-height: 1, 875;
+  line-height: 1.875;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--primary-text-color);
 }
