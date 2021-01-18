@@ -289,10 +289,6 @@ body {
 
 /*=======potfolio-toolbar=======*/
 
-.main-conteiner-btns-end-links {
-  background: var(--main-background-color);
-}
-
 /*===Main conteiner toolbar*/
 .potfolio-toolbar-lists {
   display: flex;
